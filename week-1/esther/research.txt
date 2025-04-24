@@ -1,0 +1,26 @@
+What is the Ethereum Virtual Machine (EVM), and how does it execute smart contracts?
+
+The Ethereum Virtual Machine (EVM) is the core component of the Ethereum blockchain that enables the deployment and execution of
+ smart contracts. It acts as a decentralized computer that runs on every Ethereum node, ensuring that all smart contract executions 
+ are consistent, deterministic, and secure across the entire network. The EVM allows Ethereum to function not just as a cryptocurrency 
+ platform, but as a programmable blockchain capable of running decentralized applications (dApps).
+
+Smart contracts are programs written in high-level languages like Solidity, which is then compiled into EVM bytecode. 
+This bytecode is the low-level language the EVM understands and executes. Once a smart contract is deployed to the Ethereum network, 
+it is stored on the blockchain and assigned a unique address. Users and other smart contracts can then interact with it by sending 
+transactions to this address.
+
+When a transaction triggers a smart contract, the EVM steps in to process it. It uses a stack-based architecture,
+ meaning all computations are done using a stack where operations pop values and push results. 
+ The EVM provides two types of storage: memory (temporary during execution) and storage (persistent and stored on the blockchain). 
+ This design helps isolate and secure smart contract execution.
+
+An essential aspect of the EVM is gas, which is a fee required to perform any operation. 
+Each instruction in the EVM’s instruction set (called opcodes) has a predefined gas cost. This prevents misuse of network resources,
+ such as infinite loops or excessively complex computations. If a transaction runs out of gas during execution, 
+ the operation fails but the gas is still consumed.
+
+The EVM ensures that all nodes on the Ethereum network execute the same instructions and produce the same results, 
+maintaining consensus. It operates in a sandboxed environment, meaning it has no direct access to the underlying system it runs on, 
+ensuring security and reliability. Through the EVM, Ethereum provides a powerful and flexible platform for building decentralized 
+systems without relying on centralized authorities.
