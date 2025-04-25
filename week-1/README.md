@@ -1,6 +1,6 @@
 # 🧠 Week 1 – EVM & Solidity Foundations
 
-Welcome to **Week 1** of the Arbitrum Cipher Session!  
+Welcome to **Week 1** of the Celo Cipher Session!  
 We’ve already stepped into the world of smart contracts — now it’s time to build something real and understand what powers it.
 
 ---
