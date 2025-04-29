@@ -28,7 +28,8 @@ contract Calculator {
         require(b > 0, "Division by zero");
         return a / b;
     }
-}    // State variable to store the last result
+    
+    // State variable to store the last result
     uint256 public lastResult;
 
     // Stores a result in the state variable
