@@ -1,0 +1,9 @@
+The Ethereum Virtual Machine (EVM) is a decentralized virtual environment
+ that executes code consistently and securely across all Ethereum nodes. 
+ Nodes run the EVM to execute smart contracts, using "gas" to measure the computational effort required for operations,
+  ensuring efficient resource allocation and network security.
+   Ethereum is a distributed state machine(opens in a new tab).
+    Ethereum's state is a large data structure which holds not only all accounts and balances,
+     but a machine state, which can change from block to block according to a pre-defined set of rules, and which can execute arbitrary machine code. 
+   The specific rules of changing state from block to block are defined by the EVM.
+
