@@ -1,0 +1,24 @@
+What is Smart Contract?
+Smart contract is a collection of codes that resides on the ethereum blockchain at a specific address.
+it can store data, send and receive ether, and also enforce rule stipulated in the contract without an entity controlling its output.
+This is written in solidity, which is the programmiing language used for ethereum ecosystem.
+The ethereum virtual machine is a computer isolated from the real world, which exist and runs across thousands of nodes. This is where smart contracts 
+are executed, after being compiled into bytecode stored on the blockchain - these are sequences of 1 and 0 which the evm can read and understand.
+When a node calls/executes a function/transaction, the data is loaded and the evm reads the code that exist in the contract address where its loaded onto stack, memory or storage from calldata. 
+These operations all use gas during their execution, as the ethereum ecosystem rewards participants who validates transctions.
+Gas is a unit of measurement of computation power that a certain task called is perfomed by the EVM.This ensures that the evm is not abused or strained unecessarily.
+
+
+
+smart contract characteristics : smart contract typically consist of :
+state variables - these are variables used to store data in a contract. Each contract address 
+is assigned it own state variable for data storage that is nested from others. this ensures data privacy.
+The state variable can be of type uint address,value,structs and mappings. This database storage for each contract can be 
+permanent - which is stored in the state variable where accessibility is not limited to a function but the whole contract
+transient storage - which is not for permanent storage, but works within a contract across several fuctions
+working with single data. This means that other functions can work with the data loaded in the transient storage,
+granted that it is working on the same transaction. Once the transaction task has been fufilled, the storage gets cleared.
+Memory is also a type of temporary storage that is used to load data inside of a single function and only that. it is cleared after it has been used.
+functions are used to perform operation within the contract, such as executing transaction, setting variables, etc.
+Emit log/events are nofication that is broadcast whenever changes are made to the contract state.
+
