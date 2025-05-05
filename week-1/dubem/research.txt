@@ -1,0 +1,45 @@
+
+What Is a Blockchain?
+
+A Blockchain is a distributed, append-only, cryptographically linked data structure 
+that stores a sequence of transactions or records in discrete containers called "Blocks". This means that
+the blockchain network is a piece of technology that allows for transparency through its decentralized systam that spreads out information without any centarlized body determining its outcome.
+The technology is ensured by its security integrity, where each block contains:
+- A "hash" of the previous block (chaining them together)
+- A list of "transactions" or records
+- A timestamp
+This chaining via hashes makes the ledger tamper-evident, where if you change the contents of any block, its hash changes,
+ and that invalidates all the following blocks. This creates immutability. This technology ensures the legitimacy of online money, most notable Bitcoin.
+
+Blockchains are typically decentralized — no single computer owns it. Instead:
+- Every participant (called a node) stores a copy of the chain.
+- New blocks are added through consensus algorithms — ways for the network to agree on the next valid block even if some nodes are malicious or faulty.
+Examples include:
+- Proof of Work (PoW) — used in Bitcoin
+- Proof of Stake (PoS) —  used in Ethereum 
+
+  Ethereum - The Ethereum Virtual Machine
+Ethereum builds on the blockchain concept through:
+Programmable Smart Contracts.
+Unlike Bitcoin (which is mainly a ledger for payments), 
+Ethereum adds a "Turing-complete virtual machine" called the "EVM (Ethereum Virtual Machine)" -
+the EVM being a software that replicates the likeness of a computer.
+
+This means:
+- You can write codes called smart contracts, which are written in Solidty programming language
+which would be copiled into bytecode for the EVM to be able to read its instructions and carry out the command given to it.
+- Upload it to the blockchain
+- And anyone can interact with it in a deterministic, decentralized way.
+These smart contracts enable dApps —decentralized applications— which run exactly as programmed, without the risk of downtime or third-party interference.
+Interaction with the blockchain through the EVM is aided through gas. Gas are fees paid to enable functioning of any interaction engaging on the network. 
+This is done through Ether, the currency that fuels the Ethereum Network.
+ Ether:
+- It’s used to pay gas fees — costs required to execute transactions or run smart contracts
+- These fees are paid to validators (formerly miners) who validate blocks and maintain the network’s integrity
+- It creates an economic incentive structure to keep the system secure and fair
+
+
+
+
+
+

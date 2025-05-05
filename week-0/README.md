@@ -1,6 +1,6 @@
 # 🚀 Week 0 Tasks
 
-Welcome to the **Arbitrum Cipher Session Q2 2025**!  
+Welcome to the **Celo Cipher Session Q2 2025**!  
 Your first mission is simple but *super important* – it gets you ready to build and interact with smart contracts.
 
 Please **complete all the steps below before the deadline:**
@@ -35,7 +35,7 @@ We recommend **[MetaMask](https://metamask.io/)** – a browser extension and mo
 
 ### 2. Contribute to the Project Repository
 
-Repo: [Arbitrum Cipher Session Q2 2025](https://github.com/B-rder-ess-Dev-Hub-UNN/Arbitrum-Cipher-Session-Q2-2025)
+Repo: [Celo Cipher Session Q2 2025](https://github.com/B-rder-ess-Dev-Hub-UNN/Celo-Cipher-Session-Q2-2025)
 
 You'll practice basic Git and GitHub skills by contributing your wallet address to the class repo.
 
@@ -45,7 +45,7 @@ You'll practice basic Git and GitHub skills by contributing your wallet address 
 2. Clone your fork locally using:
 
    ```bash
-   git clone https://github.com/your-username/Arbitrum-Cipher-Session-Q2-2025.git
+   git clone https://github.com/your-username/Celo-Cipher-Session-Q2-2025.git
    ```
 
 3. Navigate to the `week-0` folder.
