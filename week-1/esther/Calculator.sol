@@ -13,7 +13,7 @@ function subtract (uint8 a, uint8 b)public pure returns (uint){
     return a - b;
 }
 //function for multiplication
-function multiply(uint a, uint b)public pure returns (uint){s
+function multiply(uint a, uint b)public pure returns (uint){
     return a * b;
 }
 // function for division

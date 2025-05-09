@@ -5,15 +5,11 @@ We’ve already stepped into the world of smart contracts — now it’s time to
 
 ---
 
+## Tuesday Tasks
+
 > 🗓️ **Deadline: Tuesday, April 29th, 2025**
 
 All tasks must be submitted as a **pull request** to the class repo before the deadline.
-
----
-
-## ✅ Your Tasks
-
-This week, you’ll complete two parts:
 
 ---
 
@@ -113,3 +109,140 @@ week-1/
 - Late submissions are not guaranteed to be accepted unless you talk to me early.
 
 ---
+
+## Friday Tasks
+
+Welcome back, builders!  
+This week, you’ll be combining **everything** you've learned so far into **real projects** and **solid research**.
+
+Please **complete all tasks** below before the deadline:
+
+> 🗓️ **Deadline: Friday, 2nd May, 2025**
+
+---
+
+### 1. Research and Summarize 📖
+
+**Reading Assignment**:  
+Read the article:  
+🔗 [Introduction to Smart Contracts - Solidity Docs](https://docs.soliditylang.org/en/v0.8.29/introduction-to-smart-contracts.html)
+
+Then:
+
+- Summarize the **key concepts** discussed.
+- Write your summary in a `reading.txt` file.
+
+Some key points to focus on while reading:
+- How smart contracts work on Ethereum
+- What is the EVM?
+- How contract deployment works
+- Gas usage and why it matters
+
+🗂️ Save your summary here:
+
+```
+week-1/your-first-name/reading.txt
+```
+
+---
+
+### 2. Build a Smart Contract Project 💻
+
+You are to build a **Simple Voting App** smart contract!
+
+**Contract Name**: `SimpleVoting.sol`
+
+---
+
+### 📜 Contract Requirements
+
+✅ Your contract must:
+
+- **Use a struct** to define a `Candidate`.
+- **Use an array** to store candidates.
+- **Use a mapping** to track if an address has voted.
+- **Use an immutable** to store the owner address.
+- **Use a custom modifier** (`onlyOwner`) to restrict some actions.
+
+---
+
+### 📚 Functions to Implement:
+
+1. `addCandidate(string memory _name)`  
+   - Only the owner can add candidates.
+
+2. `vote(uint256 _candidateIndex)`  
+   - A user can vote only **once**.
+   - Voting increases the candidate’s vote count.
+
+3. `getCandidate(uint256 _index)`  
+   - Return the candidate’s name and vote count.
+
+4. `getAllCandidates()`  
+   - Return all candidates' details.
+
+5. `winner()` *(Bonus Task)*  
+   - Loop through candidates and find the candidate with the highest votes.
+
+---
+
+### 📂 Folder Structure
+
+Your work should be organized like this:
+
+```
+week-1/
+  your-first-name/
+    reading.txt
+    SimpleVoting.sol
+```
+
+Example:
+
+```
+week-1/
+  emmanuel/
+    reading.txt
+    SimpleVoting.sol
+```
+
+---
+
+### ✍🏽 Important Notes
+
+- Make sure your code compiles without errors!
+- Use **if/else** where necessary to control logic.
+- **Use loops** (`for` or `while`) where appropriate.
+- Apply **break** and **continue** where it makes sense.
+- Practice writing clean and readable Solidity code.
+- Comment your code briefly so others can understand your logic.
+
+---
+
+## 📚 Resources to Help You
+
+- [Introduction to Smart Contracts - Solidity Docs](https://docs.soliditylang.org/en/v0.8.29/introduction-to-smart-contracts.html)
+- [Solidity by Example - Structs and Mappings](https://solidity-by-example.org/structs/)
+- [Control Structures in Solidity (if/else, loops)](https://docs.soliditylang.org/en/v0.8.29/control-structures.html)
+- [Solidity Units and Globally Available Variables](https://docs.soliditylang.org/en/v0.8.29/units-and-global-variables.html)
+- [Solidity Data Types](https://docs.soliditylang.org/en/v0.8.29/types.html)
+
+---
+
+# 🏆 Deliverables
+
+By the deadline, you should have:
+
+- A `reading.txt` with your article summary.
+- A fully working `SimpleVoting.sol` smart contract.
+- Neatly organized files under `week-1/your-name/`.
+
+---
+
+# 🚨 Reminders
+
+- **Never upload your seed phrases or private keys to GitHub.**
+- **Keep your file names neat.**
+- **Ask for help** if you are stuck — don't copy your classmates' code.
+
+### **Let's keep building! LFG 🚀**
