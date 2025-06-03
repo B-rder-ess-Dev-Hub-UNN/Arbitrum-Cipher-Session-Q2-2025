@@ -1,0 +1,44 @@
+
+1. What is a Smart Contract?
+	•	A smart contract is a program that runs on the Ethereum blockchain.
+	•	It’s a collection of code (functions) and data (state) that resides at a specific Ethereum address.
+	•	Smart contracts are immutable (once deployed, code can’t change) and deterministic (same inputs always produce same outputs).
+
+
+2. A Simple Smart Contract Example
+	•	The sample contract is a simple Storage contract that:
+	•	Has an unsigned integer variable storedData.
+	•	A set() function to store a number.
+	•	A get() function to retrieve the number.
+
+    3. Basics of Solidity Syntax
+	•	Pragmas: Declares compiler version (pragma solidity ^0.8.29;)
+	•	Contract: Similar to a class in object-oriented programming.
+	•	Functions:
+	•	public: Callable from outside and inside the contract.
+	•	view: Doesn’t modify the state.
+	•	returns: Declares return type.
+
+
+4. Ethereum Virtual Machine (EVM)
+	•	EVM runs smart contracts in a sandboxed environment.
+	•	Each contract runs in its own isolated state.
+	•	EVM ensures deterministic execution and handles gas computation.
+
+
+5. Gas
+	•	Every transaction requires gas.
+	•	Gas limits prevent infinite loops and DoS attacks.
+	•	More complex tasks require more gas.
+
+
+6. Deployment and Interaction
+	•	Contracts are deployed to the blockchain through transactions.
+	•	Once deployed, they have a permanent address.
+	•	Users can call functions (like set() or get()) through transactions or simple calls.
+
+
+7. Storage and Memory
+	•	Storage: Permanent state variables stored on the blockchain.
+	•	Memory: Temporary data used during function execution.
+	•	Knowing the difference is important for managing gas and behavior.
