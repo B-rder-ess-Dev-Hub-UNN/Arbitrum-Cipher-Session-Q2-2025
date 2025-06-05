@@ -1,0 +1,67 @@
+ // SPDX-License-Identifier: MIT
+pragma solidity ^0.8.24;
+
+contract Ticketing {
+    address public owner;
+
+    constructor() {
+        owner = msg.sender;}
+
+     struct Ticket {
+        uint id;
+        string eventName;
+        uint price;
+        address owner;
+        bool isUsed;
+    }
+
+     enum Status{
+        AVAILABLE,
+        PURCHASED,
+        USED
+    }
+
+    Ticket[] public Tickets;
+    mapping(address => Ticket[])public myTickets;
+
+    event Ticket_Creation(uint indexed id, string message);
+    event Ticket_Bought(uint indexed id, string message);
+    event Ticket_Used(uint indexed id, string message);
+
+    modifier onlyOwner {
+        require(msg.sender == owner, "Not the contract owner");
+        _;
+    }
+
+     function createTicket(string memory _eventName, uint _price) public onlyOwner returns (uint) {
+        uint id = Tickets.length;
+        Ticket memory newTicket = Ticket(id, _eventName, _price, address(0), false);
+        Tickets.push(newTicket);
+        emit Ticket_Creation(id, "Ticket has been created");
+        return id;
+    }
+
+    function buyTicket(uint _id) public payable {
+        Ticket storage ticket = Tickets[_id];
+        require(ticket.owner == address(0), "Already purchased");
+        require(msg.value >= ticket.price, "Invalid price");
+
+        ticket.owner = msg.sender;
+        myTickets[msg.sender].push(ticket);
+        emit Ticket_Bought(_id, "Ticket Purchased");
+    }
+
+     function useTicket(uint _id) public {
+        Ticket storage ticket = Tickets[_id];
+        require(ticket.owner == msg.sender, "Unauthorized");
+        require(!ticket.isUsed, "Already used");
+
+        ticket.isUsed = true;
+        emit Ticket_Used(_id, "Ticket Used");
+    }
+
+    function getMyTickets(address user) public view returns (Ticket[] memory) {
+        return myTickets[user];
+    }
+
+}

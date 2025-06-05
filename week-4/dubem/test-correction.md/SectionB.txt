@@ -1,0 +1,20 @@
+ Answer all questions clearly and concisely.
+What is the difference between memory and storage in Solidity?
+Answer : Storage is where values are stored on the blockchain. writing to storage can be very expensive as compared to memory. meory is used as a store of value for real time input
+this means compared to storage where values are stored on the blockchain, memory acts as a temporary outlet for stored value which can be used to work with state update in realtime, thus, limiting the cost of directly working with storage slot. 
+Fill in the blank:
+The _________ keyword is used to ensure that a function doesn't modify state variables and doesn't read them either. Answer : pure
+What is the role of require() in Solidity? Give a short example. Answer : require is used to validate set rule. This means it checks if a rule condition set meets the requirement  
+and if it doesnt, it throws an error message : (require msg.sender = owner, "unauthorized")
+Name and describe two types of function visibility in Solidity.
+Answer : public and private. public function is visible and can be called from outside input, while private works within the contract and cannot be called from outside.
+Explain what an enum is in Solidity and give an example use case. 
+Answer:Enum are used to hold varaaibles for state change. it can be used to represent the current status of a definrd item.
+Why is it unsafe to use .transfer() in some cases when sending ETH?
+Answer : .transfer() can be unsafe in some cases when sennding eth especially to smart contracts, as the task that should be carried out might not have enough gas to do the computation, thereby failing the transaction, and transfer doesnt return an error making it super risky.
+Explain how mapping(address => bool) works and one use case.
+mapping connects multiple vales to their keys in a array like structure. in thsi case, address are being connected to their boolean value set, this can be used to set a check on if an address has performed a specific task.
+
+
+
+
