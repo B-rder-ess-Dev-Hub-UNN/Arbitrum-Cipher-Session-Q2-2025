@@ -1,0 +1,44 @@
+✍🏽Section A – Multiple Choice Questions (10 Marks)
+Choose the correct option (A, B, C, or D) for each question.
+Which of the following is used to restrict a function to only the deployer?
+A) require(msg.sender == tx.origin)
+B) constructor()
+C) onlyOwner modifier
+D) address(this).balance
+Ans: C
+
+What does the view modifier indicate in a function?
+A) It changes state
+B) It can send Ether
+C) It reads state but does not modify it
+D) It modifies gas fees
+ANS : C
+
+What happens when a contract’s receive() function is triggered?
+A) Ether is burned
+B) Ether is sent to msg.sender
+C) Ether is received by the contract
+D) The fallback() function runs instead
+Ans: C
+
+What data type is used to store an Ethereum address in Solidity?
+A) uint160
+B) account
+C) address
+D) string
+Ans:C
+
+What is the output of this loop?
+
+   for (uint i = 0; i < 5; i++) {
+       if (i == 3) {
+           break;
+       }
+   }
+
+
+A) Loop runs forever
+B) Loop skips 3
+C) Loop stops at i = 3
+D) Loop stops at i = 5
+ANS  : C

@@ -1,0 +1,25 @@
+Answer all questions clearly and concisely.
+
+What is the difference between memory and storage in Solidity?
+Ans: memory is a function scope way of storing data, its is expired after the function that it is declared in finishes execution
+     storage is more like a global way o storing data as they can be accessed inside the contract
+
+Fill in the blank:
+The _________ keyword is used to ensure that a function doesn't modify state variables and doesn't read them either.
+ANS: pure function
+
+What is the role of require() in Solidity? Give a short example.
+ANS: A  conditional statement eg require(address.value > 0 ,"insufficient funds") the code check if the first argument is true if false it executes the second
+
+Name and describe two types of function visibility in Solidity.
+ANS: external function are functions that  can be called outside a contract 
+     internal function are functions that are used within a contract
+
+Explain what an enum is in Solidity and give an example use case.
+ANS: used  to store the state of a data, struct etc eg enum status{ available, purchased, used} the enum above can be used to show the state of eg a struct
+
+Why is it unsafe to use .transfer() in some cases when sending ETH?
+ANS: it usually has insufficient gas for the logic of a smart contract to be executed
+
+Explain how mapping(address => bool) works and one use case.
+ANS: it maps an addres to a boolean this is done in some case were we want to restrict  user from a particular action  eg to check if users are allowed to vote or not
