@@ -28,7 +28,7 @@ contract Ticketing {
     }
 
 
-    mapping(uint => Ticket) public ownerId;
+    mapping(address => Ticket) public ownerId;
     mapping(address => uint[]) public ownerTicket;
     
      constructor() {
